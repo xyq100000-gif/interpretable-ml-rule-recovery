@@ -38,7 +38,7 @@ with training **R² = 0.9993**.
 ## Repository structure
 
 ```text
-ml_coursework_refactor/
+interpretable-ml-rule-recovery/
 ├── README.md
 ├── requirements.txt
 ├── data/
