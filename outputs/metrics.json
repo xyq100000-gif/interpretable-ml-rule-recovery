@@ -1,0 +1,156 @@
+{
+  "dataset": {
+    "n_train": 250,
+    "n_test": 250,
+    "n_total": 500
+  },
+  "clan_classification": {
+    "selected_features": [
+      "avoidance",
+      "peril"
+    ],
+    "best_k": 9,
+    "cv_summary": [
+      {
+        "k": 9,
+        "mean_accuracy": 0.9416,
+        "std_accuracy": 0.004079215610874201
+      },
+      {
+        "k": 7,
+        "mean_accuracy": 0.9399999999999998,
+        "std_accuracy": 0.0043817804600412924
+      },
+      {
+        "k": 5,
+        "mean_accuracy": 0.9328,
+        "std_accuracy": 0.00890842298052799
+      },
+      {
+        "k": 3,
+        "mean_accuracy": 0.9288000000000001,
+        "std_accuracy": 0.009260669522232161
+      },
+      {
+        "k": 1,
+        "mean_accuracy": 0.9176,
+        "std_accuracy": 0.008616263691415214
+      }
+    ],
+    "train_accuracy": 0.948,
+    "train_confusion": {
+      "haldane": {
+        "haldane": 41,
+        "irvine": 0,
+        "lewis": 4,
+        "wheatley": 2
+      },
+      "irvine": {
+        "haldane": 0,
+        "irvine": 59,
+        "lewis": 0,
+        "wheatley": 0
+      },
+      "lewis": {
+        "haldane": 3,
+        "irvine": 0,
+        "lewis": 67,
+        "wheatley": 2
+      },
+      "wheatley": {
+        "haldane": 2,
+        "irvine": 0,
+        "lewis": 0,
+        "wheatley": 70
+      }
+    },
+    "test_vote_share_mean": 0.9346666666666666,
+    "test_vote_share_min": 0.4444444444444444
+  },
+  "rank_rule_learning": {
+    "rules": [
+      {
+        "clan": "haldane",
+        "feature": "forgiveness",
+        "direction": "asc",
+        "t1": 87.265,
+        "t2": 88.375,
+        "train_accuracy": 1.0
+      },
+      {
+        "clan": "irvine",
+        "feature": "spike_rate",
+        "direction": "asc",
+        "t1": 40.974999999999994,
+        "t2": 43.32,
+        "train_accuracy": 1.0
+      },
+      {
+        "clan": "lewis",
+        "feature": "angst",
+        "direction": "asc",
+        "t1": 23.77,
+        "t2": 25.0,
+        "train_accuracy": 1.0
+      },
+      {
+        "clan": "wheatley",
+        "feature": "charring",
+        "direction": "asc",
+        "t1": 28.37,
+        "t2": 29.645,
+        "train_accuracy": 1.0
+      }
+    ],
+    "train_accuracy": 1.0,
+    "train_confusion": {
+      "0": {
+        "0": 92,
+        "1": 0,
+        "2": 0
+      },
+      "1": {
+        "0": 0,
+        "1": 77,
+        "2": 0
+      },
+      "2": {
+        "0": 0,
+        "1": 0,
+        "2": 81
+      }
+    }
+  },
+  "prowess_formula": {
+    "features": [
+      "charring",
+      "sliminess"
+    ],
+    "float_weights": [
+      -27796.240870759724,
+      5.823332706807491,
+      886.8507876113844
+    ],
+    "integer_weights": [
+      -27796,
+      6,
+      887
+    ],
+    "cv_mae": 35.25248000000004,
+    "train_rmse": 46.98124574763855,
+    "train_r2": 0.9993490545798561,
+    "formula": "prowess = -27796 + 6*charring + 887*sliminess"
+  },
+  "extensions": {
+    "tournament_win_probabilities": {
+      "wheatley": 0.8556,
+      "lewis": 0.1381,
+      "haldane": 0.0061,
+      "irvine": 0.0002,
+      "Draw": 0.0
+    },
+    "bloodbath_this_year": 0.4585655807223479,
+    "peace_over_38_years": 0.00071,
+    "peace_over_38_years_ci95": 0.00016509389599376472
+  }
+}

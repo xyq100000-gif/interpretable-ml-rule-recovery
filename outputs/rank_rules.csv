@@ -1,0 +1,5 @@
+clan,feature,direction,t1,t2,train_accuracy
+haldane,forgiveness,asc,87.265,88.375,1.0
+irvine,spike_rate,asc,40.974999999999994,43.32,1.0
+lewis,angst,asc,23.77,25.0,1.0
+wheatley,charring,asc,28.37,29.645,1.0
